@@ -11,6 +11,7 @@
 
 ## Pipeline overview
 The program requires as input a bam file containing preprocessed and mapped reads from a human sample. Using the hg19 genome as reference, SAMtools mpileup command is run to obtain a summary of the coverage of the mapped reads.
+<br />
 SAMtools mpileup is run with the following parameters modified from the default:
 	-A and -B which does not discard anomalous read pairs and disables the reporting of the base quality scores respectively
 	-d9999 which sets the maximum depth at the specified value to limit memory cost
